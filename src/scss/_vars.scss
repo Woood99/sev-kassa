@@ -1,9 +1,9 @@
 // main
-$fontFamily: "asd";
-$fontSize: 14;
+$fontFamily: "Inter";
+$fontSize: 15;
 $minWidth: 320;
 $maxWidth: 1920;
-$contentWidth: 1170;
+$contentWidth: 1400;
 $containerOffset: 15;
 $containerWidth: calc($contentWidth + ($containerOffset * 2));
 
@@ -14,8 +14,15 @@ $mainColor: #000; // Цвет шрифта по умолчанию
 :root {
 
     // additional colors
-    --accent: #000;
-    --primary: #fff;
+    --white: #fff;
+    --blue: #1e293b;
+    --gray-light: #e2e8f0;
+    --gray-dark: #7d7d7d;
+    --orange: #ff8a00;
+    --green: #17a400;
+
+    --gradient-aqua: linear-gradient(115.13deg, #208275 0%, #2DD4BF 100%);
+    --gradient-aqua-light: linear-gradient(115.13deg, rgba(32, 130, 117, 0.3) 0%, rgba(45, 212, 191, 0.3) 100%);;
 }
 
 
@@ -23,7 +30,6 @@ $mainColor: #000; // Цвет шрифта по умолчанию
 // others vars
 $transitionSpeed: 0.3s;
 $transitionFunction: ease-in-out;
-
 
 
 // break points
