@@ -1,0 +1,39 @@
+.call-back {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    color: var(--gray-light);
+
+    &__icon {
+        width: 30px;
+        height: 30px;
+        fill: currentColor;
+    }
+
+    &__tel {
+        margin-left: 10px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: math.div(22, 18);
+        transition: color $transitionSpeed $transitionFunction;
+
+        &:hover {
+            color: var(--aqua);
+        }
+
+    }
+
+    &__btn {
+        margin-left: 15px;
+        color: inherit;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: math.div(17, 14);
+        text-decoration: underline;
+        transition: color $transitionSpeed $transitionFunction;
+
+        &:hover {
+            color: var(--aqua);
+        }
+    }
+}

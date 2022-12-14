@@ -13,14 +13,17 @@
 
 
 // ui components
-@import "./ui-kit/component";
+@import "./ui-kit/call-back";
+@import "./ui-kit/working-hours";
 
 
 // =============================================================================================================
 
 
 // small components
-// @import "./components/nav";
+@import "./components/top-info";
+@import "./components/nav";
+@import "./components/logo";
 
 
 // =============================================================================================================

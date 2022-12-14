@@ -1,0 +1,12 @@
+.logo {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: math.div(35, 30);
+    letter-spacing: 0.065em;
+    white-space: nowrap;
+
+    @media (max-width:$smallTablet-max){
+        font-size: 20px; 
+    }
+}

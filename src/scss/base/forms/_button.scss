@@ -14,3 +14,41 @@
         background-color $transitionSpeed $transitionFunction,
         border $transitionSpeed $transitionFunction;
 }
+
+.btn-primary {
+    color: #fff;
+    background: var(--gradient-aqua);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: math.div(24, 20);
+    padding: 13px 101px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--gradient-bg);
+        border-radius: inherit;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity $transitionSpeed $transitionFunction;
+    }
+
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    @media (max-width:$smallTablet-max) {
+        font-size: 16px;
+        padding: 10px 41px 11px 40px;
+    }
+}

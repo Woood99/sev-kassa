@@ -42,4 +42,36 @@
     }
 }
 
-.subtitle {}
+.bg-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-bg {
+    position: relative;
+
+    &::after {
+        content: '';
+        background: linear-gradient(96.18deg, rgba(0, 0, 0, 0.5) 4.45%, rgba(0, 0, 0, 0) 57.93%);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    &>* {
+        position: relative;
+        z-index: 1;
+    }
+
+    @media (max-width:$tablet-max) {
+        background-position: 70% 0;
+    }
+}
+
+.text-upp {
+    text-transform: uppercase;
+}

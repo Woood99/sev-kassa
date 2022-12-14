@@ -1,0 +1,21 @@
+.working-hours {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 3px;
+    color: var(--gray-light);
+    &__icon {
+        width: 30px;
+        height: 30px;
+        fill: var(--gray-light);
+        grid-row: 1/3;
+    }
+
+    &__row {
+        grid-column: 2/3;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: math.div(15, 12);
+    }
+}

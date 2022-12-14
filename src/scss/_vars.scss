@@ -20,9 +20,10 @@ $mainColor: #000; // Цвет шрифта по умолчанию
     --gray-dark: #7d7d7d;
     --orange: #ff8a00;
     --green: #17a400;
-
+    --aqua: #2DD4BF;
     --gradient-aqua: linear-gradient(115.13deg, #208275 0%, #2DD4BF 100%);
-    --gradient-aqua-light: linear-gradient(115.13deg, rgba(32, 130, 117, 0.3) 0%, rgba(45, 212, 191, 0.3) 100%);;
+    --gradient-aqua-light: linear-gradient(115.13deg, rgba(32, 130, 117, 0.3) 0%, rgba(45, 212, 191, 0.3) 100%);
+    --gradient-bg: linear-gradient(106.56deg, #1E293B 1.26%, #266275 101.3%);
 }
 
 
@@ -34,14 +35,19 @@ $transitionFunction: ease-in-out;
 
 // break points
 $desktop: $containerWidth+px;
+
+$tablet: 1024;
 $tablet-max: 1024px;
 $tablet-min: 1025px;
 
+$smallTablet: 768;
 $smallTablet-max: 768px;
 $smallTablet-min: 769px;
 
+$mobile: 576;
 $mobile-max: 576px;
 $mobile-min: 577px;
 
+$smallMobile: 480px;
 $smallMobile-max: 480px;
 $smallMobile-min: 481px;

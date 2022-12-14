@@ -1,0 +1,28 @@
+.top-info {
+    background-color: var(--blue);
+    color: var(--gray-light);
+    padding: 10px 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: math.div(15, 12);
+        @media (max-width:$tablet-max){
+            display: none;
+        }
+    }
+
+    &__time {}
+
+    &__call-back {}
+    @media (max-width:$smallTablet-max){
+        display: none; 
+    }
+}
+
+
