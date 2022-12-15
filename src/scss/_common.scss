@@ -75,3 +75,14 @@
 .text-upp {
     text-transform: uppercase;
 }
+
+.top-gap-primary {
+    @include adaptiveValue("margin-top", $topGapPrimaryMax, $topGapPrimaryMin);
+}
+.top-gap-secondary {
+    @include adaptiveValue("margin-top", $topGapSecondaryMax, $topGapSecondaryMin);
+}
+
+.text-center{
+    text-align: center;
+}

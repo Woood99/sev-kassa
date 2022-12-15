@@ -1,0 +1,16 @@
+.descr {
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 70px;
+
+        @media (max-width:$tablet-max) {
+            grid-template-columns: auto;
+            grid-gap: 50px;
+        }
+
+        @media (max-width:$smallTablet-max) {
+            grid-gap: 20px;
+        }
+    }
+}
