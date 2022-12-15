@@ -1,0 +1,19 @@
+.benefits {
+
+    &__container {}
+
+    &__title {}
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+        grid-gap: 30px;
+
+        @media (max-width:$smallTablet-max) {
+            grid-gap: 15px;
+            grid-template-columns: auto;
+        }
+    }
+
+    &__item {}
+}
