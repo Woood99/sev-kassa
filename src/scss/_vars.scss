@@ -15,15 +15,19 @@ $mainColor: #000; // Цвет шрифта по умолчанию
 
     // additional colors
     --white: #fff;
-    --blue: #1e293b;
+    --dark-blue: #1e293b;
     --gray-light: #e2e8f0;
     --gray-dark: #7d7d7d;
     --orange: #ff8a00;
     --green: #17a400;
     --aqua: #2DD4BF;
+    --blue: #0061BB;
     --gradient-aqua: linear-gradient(115.13deg, #208275 0%, #2DD4BF 100%);
     --gradient-aqua-light: linear-gradient(115.13deg, rgba(32, 130, 117, 0.3) 0%, rgba(45, 212, 191, 0.3) 100%);
     --gradient-bg: linear-gradient(106.56deg, #1E293B 1.26%, #266275 101.3%);
+
+    --shadow-primary: 3px 4px 12px rgba(0, 0, 0, 0.25);
+    --shadow-secondary: 2.01389px 2.68519px 8.05556px rgba(0, 0, 0, 0.25);
 }
 
 // gap

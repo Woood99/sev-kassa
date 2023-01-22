@@ -76,6 +76,10 @@ a {
     clip: rect(0 0 0 0);
 }
 
+.hidden {
+    display: none;
+}
+
 .dis-scroll {
     position: fixed;
     left: 0;
@@ -99,6 +103,10 @@ a {
     margin: 0 auto;
     padding: 0 ($containerOffset + px);
     max-width: $containerWidth + px;
+
+    @media (max-width:$mobile-max) {
+        padding: 0 10px;
+    }
 }
 
 

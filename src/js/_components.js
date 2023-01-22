@@ -1,3 +1,7 @@
-// import './components/asd';
+import productsActions from './components/productsActions';
 
 
+
+// ====================================================================================
+
+productsActions();

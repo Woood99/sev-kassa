@@ -16,25 +16,28 @@
 @import "./ui-kit/call-back";
 @import "./ui-kit/working-hours";
 @import "./ui-kit/benefit-item";
+@import "./ui-kit/product-card";
 
 
 // =============================================================================================================
 
 
 // small components
-@import "./components/top-info";
 @import "./components/nav";
 @import "./components/logo";
+@import "./components/product-modal";
 
 
 // =============================================================================================================
 
 
 // big components
+@import "./components/top-info";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/descr";
 @import "./components/benefits";
+@import "./components/popular-products";
 @import "./components/footer";
 
 

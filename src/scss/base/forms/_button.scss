@@ -52,3 +52,27 @@
         padding: 10px 41px 11px 40px;
     }
 }
+
+
+.btn-secondary {
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: math.div(21, 17);
+    padding: 7px 20px;
+    border-radius: 5px;
+    transition: background-color $transitionSpeed $transitionFunction;
+    &:hover{
+        background-color: var(--dark-blue);
+    }
+    @media (max-width:$tablet-max) {
+        padding: 10px 20px 9px;
+    }
+
+    @media (max-width:$mobile-max) {
+        font-size: 13px;
+        padding: 6px 20px;
+        border-radius: 3px;
+    }
+}

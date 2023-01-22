@@ -1,0 +1,94 @@
+.product-card {
+    background-color: var(--white);
+    box-shadow: var(--shadow-primary);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__img {
+        margin: 30px auto 0 auto;
+        display: block;
+        width: 75%;
+        @media (max-width:$tablet-max){
+            margin: 20px auto 0 auto;
+        }
+        @media (max-width:$mobile-max){
+            margin: 14px auto 0 auto; 
+        }
+    }
+
+    &__content {
+        margin-top: 30px;
+        background-color: #f5f5f5;
+        border-radius: 0px 0px 20px 20px;
+        padding: 19px 33px 15px 27px;
+
+        @media (max-width:$tablet-max) {
+            margin-top: 18px;
+            border-radius: 0px 0px 5px 5px;
+            padding: 15px 13px 15px 12px;
+        }
+
+        @media (max-width:$mobile-max) {
+            margin-top: 14px;
+            padding: 5px 10px 6px 8px;
+        }
+    }
+
+    &__title {
+        max-width: 175px;
+        font-weight: 500;
+        @include adaptiveValue("font-size", 20, 12);
+        line-height: math.div(24, 20);
+    }
+
+    &__duration {
+        display: block;
+        margin-top: 5px;
+        color: var(--gray-dark);
+        font-weight: 500;
+        @include adaptiveValue("font-size", 17, 11);
+        line-height: math.div(21, 17);
+    }
+
+    &__row {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:$mobile-max) {
+            margin-top: 6px;
+        }
+    }
+
+    &__price {
+        color: var(--green);
+        font-weight: 500;
+        @include adaptiveValue("font-size", 30, 16);
+        line-height: math.div(36, 30);
+    }
+
+    &__quantity {
+        @media (max-width:$tablet-max) {
+            display: none;
+        }
+    }
+
+    &__btn {
+        margin-top: 20px;
+        width: 100%;
+
+        @media (max-width:$mobile-max) {
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width:$tablet-max) {
+        border-radius: 5px;
+    }
+
+    @media (max-width:$mobile-max) {
+        box-shadow: var(--shadow-secondary);
+    }
+}

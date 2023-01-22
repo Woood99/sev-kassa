@@ -1,0 +1,62 @@
+.popular-products {
+
+    &__container {}
+
+    &__title {}
+
+    &__inner {}
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 20px;
+        column-gap: 30px;
+
+        @media (max-width:$tablet-max) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        @media (max-width:$mobile-max) {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 15px;
+            column-gap: 10px;
+        }
+    }
+
+    &__item {
+        @media (min-width:$tablet-min) {
+            &:nth-child(n+9) {
+                display: none;
+            }
+        }
+
+        @media (max-width:$tablet-max) {
+            &:nth-child(n+7) {
+                display: none;
+            }
+        }
+
+        &.is-visible {
+            display: flex;
+        }
+    }
+
+    &__more {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 500;
+        @include adaptiveValue("font-size", 22, 18);
+        line-height: math.div(27, 22);
+        text-decoration: underline;
+
+        &.hide {
+            display: none;
+        }
+
+        &:hover {
+            color: var(--orange);
+        }
+    }
+}

@@ -10,7 +10,12 @@
 
 
 // Определение ширины экрана
-// import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
+
+import {
+    isMobile,
+    isTablet,
+    isDesktop
+} from './functions/check-viewport';
 // if (isDesktop()) {
 //   console.log('desktop')
 // } else if (isTablet()) {
@@ -24,7 +29,9 @@
 
 
 // Реализация бургер-меню
-import { burger } from './functions/burger';
+import {
+    burger
+} from './functions/burger';
 
 
 // ========================================================================================
@@ -57,10 +64,13 @@ import { burger } from './functions/burger';
 
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
-import { getHeaderHeight, getTopInfoHeight } from './functions/get-block-height';
+import {
+    getHeaderHeight,
+    getTopInfoHeight
+} from './functions/get-block-height';
 getHeaderHeight();
 getTopInfoHeight();
-window.addEventListener('resize',() => {
+window.addEventListener('resize', () => {
     getHeaderHeight();
     getTopInfoHeight();
 });
@@ -184,8 +194,8 @@ window.addEventListener('resize',() => {
 
 
 // Модуь  "количество"
-//import { formQuantity } from './functions/quantity';
-//formQuantity();
+// import { formQuantity } from './functions/quantity';
+// formQuantity();
 
 
 // ========================================================================================
