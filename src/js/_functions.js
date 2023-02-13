@@ -86,7 +86,7 @@ window.addEventListener('resize', () => {
 
 
 // Подключение файла со слайдерами
-// import "./functions/sliders";
+import "./functions/sliders";
 
 
 // ========================================================================================
@@ -125,21 +125,6 @@ window.addEventListener('resize', () => {
 //     console.log(e.detail);
 //     console.log(e.detail.dir);
 // });
-
-
-
-// ========================================================================================
-
-
-// import { validateForms } from './functions/validate-forms';
-// const rules1 = [...];
-
-// const afterForm = () => {
-//   console.log('Произошла отправка, тут можно писать любые действия');
-// };
-
-// validateForms('.form-1', rules1, afterForm);
-
 
 
 // ========================================================================================
@@ -184,18 +169,8 @@ window.addEventListener('resize', () => {
 
 
 // Модуль звездного рейтинга 
-// import * as ratingFunc from "./functions/rating";
-// ratingFunc.formRating();
-
-
-
-// ========================================================================================
-
-
-
-// Модуь  "количество"
-// import { formQuantity } from './functions/quantity';
-// formQuantity();
+import * as ratingFunc from "./functions/rating";
+ratingFunc.formRating();
 
 
 // ========================================================================================

@@ -1,12 +1,48 @@
 import quantity from './quantity';
 import readCompletely from './readCompletely';
-import {
-    disableScroll
-} from '../functions/disable-scroll';
-import {
-    enableScroll
-} from '../functions/enable-scroll';
 import Choices from 'choices.js';
+import modal from './modal';
+import {
+    validateForms
+} from '../functions/validate-forms';
+const productModalValidateRules = [{
+        ruleSelector: '.product-modal__input--name',
+        rules: [{
+                rule: 'minLength',
+                value: 10,
+                errorMessage: 'Заполните ФИО!'
+            },
+            {
+                rule: 'required',
+                value: true,
+                errorMessage: 'Заполните ФИО!'
+            }
+        ]
+    },
+    {
+        ruleSelector: '.product-modal__input--tel',
+        tel: true,
+        telError: 'Введите корректный телефон',
+        rules: [{
+            rule: 'required',
+            value: true,
+            errorMessage: 'Заполните телефон!'
+        }]
+    },
+    {
+        ruleSelector: '.product-modal__input--email',
+        rules: [{
+                rule: 'required',
+                errorMessage: 'Введите свой email',
+            },
+            {
+                rule: 'email',
+                errorMessage: 'Email указан некорректно!',
+            }
+        ]
+    },
+];
+
 const productsActions = () => {
     const productsContainer = document.querySelector('.popular-products__list');
     getProducts();
@@ -102,6 +138,7 @@ const productsActions = () => {
                         quantity('.product-modal', 50);
                         readCompletely('.product-settings', '.product-settings__btn', '.product-settings__item', 8);
                         deliverySelect('.product-modal__select');
+                        validateForms('.product-modal__content', productModalValidateRules);
                         break;
                     }
                 }
@@ -127,22 +164,28 @@ const productsActions = () => {
         let modalHTML;
         if (window.innerWidth > 768) {
             modalHTML = `
-            <div class="product-modal">
-            <div class="product-modal__container" data-product-modal-pid="${itemData.id}">
-                <button class="btn-reset product-modal__close" aria-label="Закрыть модальное окно">
+            <div class="product-modal modal-primary">
+            <div class="product-modal__container modal-primary__container" data-product-modal-pid="${itemData.id}">
+                <button class="btn-reset product-modal__close modal-primary__close" aria-label="Закрыть модальное окно">
                      <svg>
                          <use xlink:href="img/sprite.svg#close"></use>
                      </svg>
                 </button>
-                <form class="product-modal__content" action="#">
+                <form class="product-modal__content modal-primary__content" action="#">
                     <div class="product-modal__left">
                         <div class="product-modal__img">
                              <img src="${itemData.imgSrc}" alt="${itemData.title}">
                         </div>
                         <div class="product-modal__labels">
-                            <input type="text" name="фио" class="input-reset product-modal__input" placeholder="ФИО">
-                            <input type="tel" name="Телефон" class="input-reset product-modal__input" placeholder="Телефон">
-                            <input type="email" name="E-mail" class="input-reset product-modal__input" placeholder="E-mail">
+                            <label class="product-modal__label label-validate label-validate--aqua">
+                                <input type="text" name="фио" class="input-reset input-primary input-primary--border-mobile product-modal__input product-modal__input--name" placeholder="ФИО">
+                            </label>
+                            <label class="product-modal__label label-validate label-validate--aqua">
+                                <input type="tel" name="Телефон" class="input-reset input-primary input-primary--border-mobile product-modal__input product-modal__input--tel" placeholder="Телефон">
+                            </label>
+                            <label class="product-modal__label label-validate label-validate--aqua">
+                                <input type="email" name="E-mail" class="input-reset input-primary input-primary--border-mobile product-modal__input product-modal__input--email" placeholder="E-mail">
+                            </label>
                             <select class="product-modal__select" name="delivery">
                                 <option value="">Выберите способ доставки</option>
                                 <option value="email">На электронную почту</option>
@@ -230,14 +273,14 @@ const productsActions = () => {
         `;
         } else {
             modalHTML = `
-            <div class="product-modal">
-            <div class="product-modal__container" data-product-modal-pid="${itemData.id}">
-                <button class="btn-reset product-modal__close" aria-label="Закрыть модальное окно">
+            <div class="product-modal modal-primary">
+            <div class="product-modal__container modal-primary__container" data-product-modal-pid="${itemData.id}">
+                <button class="btn-reset product-modal__close modal-primary__close" aria-label="Закрыть модальное окно">
                      <svg>
                          <use xlink:href="img/sprite.svg#close"></use>
                      </svg>
                 </button>
-                <form class="product-modal__content" action="#">
+                <form class="product-modal__content modal-primary__content" action="#">
                         <div class="product-modal__img">
                              <img src="${itemData.imgSrc}" alt="${itemData.title}">
                         </div>
@@ -264,9 +307,15 @@ const productsActions = () => {
                              ${benefitsHTML}
                         </div>
                         <div class="product-modal__labels">
-                            <input type="text" name="фио" class="input-reset product-modal__input" placeholder="ФИО">
-                            <input type="tel" name="Телефон" class="input-reset product-modal__input" placeholder="Телефон">
-                            <input type="email" name="E-mail" class="input-reset product-modal__input" placeholder="E-mail">
+                            <label class="product-modal__label label-validate label-validate--aqua">
+                                <input type="text" name="фио" class="input-reset input-primary input-primary--border-mobile product-modal__input product-modal__input--name" placeholder="ФИО">
+                            </label>
+                            <label class="product-modal__label label-validate label-validate--aqua">
+                                <input type="tel" name="Телефон" class="input-reset input-primary input-primary--border-mobile product-modal__input product-modal__input--tel" placeholder="Телефон">
+                            </label>
+                            <label class="product-modal__label label-validate label-validate--aqua">
+                                <input type="email" name="E-mail" class="input-reset input-primary input-primary--border-mobile product-modal__input product-modal__input--email" placeholder="E-mail">
+                            </label>
                             <select class="product-modal__select" name="delivery">
                                 <option value="">Выберите способ доставки</option>
                                 <option value="email">На электронную почту</option>
@@ -328,66 +377,7 @@ const productsActions = () => {
          </div>
         `;
         }
-        if (document.querySelectorAll('.product-modal').length <= 0 && modalHTML) {
-            document.body.insertAdjacentHTML('beforeend', modalHTML);
-            const productModal = document.querySelector('.product-modal');
-            const productModalContainer = productModal.querySelector('.product-modal__container');
-            const productModalCloseEl = productModal.querySelector('.product-modal__close');
-            const settingsModal = {
-                isOpen: false,
-                speed: 300,
-                animation: 'fade'
-            };
-            setTimeout(() => {
-                productModalOpen();
-            }, 1);
-            productModalCloseEl.addEventListener('click', () => {
-                productModalClose();
-            });
-            productModal.addEventListener('click', (e) => {
-                if (e.target.classList.contains('product-modal')) {
-                    productModalClose();
-                }
-            })
-            window.addEventListener('keydown', (e) => {
-                if (e.keyCode == 27) {
-                    productModalClose();
-                }
-            })
-
-            function productModalClose() {
-                if (settingsModal.isOpen) {
-                    productModalContainer.classList.remove('animate-open');
-                    productModalContainer.classList.remove(settingsModal.animation);
-                    productModal.classList.remove('is-open');
-                    productModalContainer.classList.remove('open');
-                    enableScroll();
-                    document.body.style.scrollBehavior = 'auto';
-                    document.documentElement.style.scrollBehavior = 'auto';
-                    setTimeout(() => {
-                        productModal.remove();
-                    }, settingsModal.speed);
-                    settingsModal.isOpen = false;
-                }
-            }
-
-            function productModalOpen() {
-                if (!settingsModal.isOpen) {
-                    productModalContainer.scrollTo(0, 0);
-                    productModal.style.setProperty('--transition-time', `${settingsModal.speed / 1000}s`);
-                    productModal.classList.add('is-open');
-                    document.body.style.scrollBehavior = 'auto';
-                    document.documentElement.style.scrollBehavior = 'auto';
-                    disableScroll();
-                    productModalContainer.classList.add('open');
-                    productModalContainer.classList.add(settingsModal.animation);
-                    setTimeout(() => {
-                        productModalContainer.classList.add('animate-open');
-                    }, settingsModal.speed);
-                    settingsModal.isOpen = true;
-                }
-            }
-        }
+        modal(modalHTML, '.product-modal', '.modal-primary', 300);
     }
 }
 

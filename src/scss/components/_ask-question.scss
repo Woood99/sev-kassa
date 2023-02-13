@@ -1,0 +1,81 @@
+.ask-question {
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--white);
+
+    &__container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        @include adaptiveValue("padding-bottom", 70, 30);
+    }
+
+    &__title {}
+
+    &__descr {
+        margin-top: 20px;
+        font-weight: 500;
+        @include adaptiveValue("font-size", 25, 18);
+        line-height: math.div(30, 25);
+        max-width: 575px;
+    }
+
+    &__form {
+        @include adaptiveValue("margin-top", 40, 20);
+        display: grid;
+        grid-auto-flow: column;
+
+        grid-gap: 20px;
+
+
+        @media (max-width:$tablet-max) {
+            max-width: 305px;
+            width: 100%;
+            grid-auto-flow: row;
+            grid-gap: 15px;
+        }
+
+        @media (max-width:$smallTablet-max) {
+            grid-gap: 7px;
+        }
+
+        @media (max-width:$mobile-max) {
+            max-width: none;
+        }
+    }
+
+    &__label {
+
+        @media (max-width:$tablet-max) {
+            text-align-last: left;
+
+            .just-validate-error-label {
+                position: static;
+                transform: translateY(0);
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__input {
+        border-radius: 10px;
+    }
+
+    &__btn {
+        align-self: start;
+        padding: 13px 32px;
+    }
+
+    &__policy {
+        @include adaptiveValue("margin-top", 40, 30);
+        max-width: 455px;
+        @include adaptiveValue("font-size", 15, 9);
+        line-height: math.div(18, 15);
+
+        @media (max-width:$tablet-max) {
+            @include adaptiveValue("margin-top", 30, 20, 1024, 320);
+        }
+    }
+}

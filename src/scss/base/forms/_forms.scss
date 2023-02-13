@@ -1,5 +1,54 @@
 // =============================================================================
 
+
+
+
+.label-validate {
+
+    .just-validate-error-label {
+        padding: 0 15px;
+        font-style: italic;
+    }
+
+    &--orange {
+        .just-validate-error-label {
+            color: var(--orange) !important;
+        }
+    }
+
+    &--aqua {
+        .just-validate-error-label {
+            color: var(--aqua) !important;
+        }
+    }
+
+    &--absolute {
+        position: relative;
+
+        .just-validate-error-label {
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            transform: translateY(100%);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =============================================================================
+
 // button
 @import "button";
 
@@ -16,7 +65,7 @@
 // =============================================================================
 
 // rating
-// @import "rating";
+@import "rating";
 
 // =============================================================================
 

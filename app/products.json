@@ -1,0 +1,482 @@
+[
+    {
+        "id": 1,
+        "imgSrc": "./img/product-card/product-yandex.png",
+        "title": "Код активации Яндекс ОФД",
+        "duration": "15 месяцев",
+        "price": "490р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 2,
+        "imgSrc": "./img/product-card/product-taxcom.png",
+        "title": "Код активации Такском ОФД",
+        "duration": "15 месяцев",
+        "price": "790р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 3,
+        "imgSrc": "./img/product-card/product-ofd.png",
+        "title": "Код активации OFD.ru",
+        "duration": "15 месяцев",
+        "price": "790р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 4,
+        "imgSrc": "./img/product-card/product-firstofd.png",
+        "title": "Код активации Первый ОФД",
+        "duration": "15 месяцев",
+        "price": "790р",
+        "vendorCode": "ХХХХХХХХ",
+            "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 5,
+        "imgSrc": "./img/product-card/product-yandex-2.png",
+        "title": "Код активации Яндекс ОФД",
+        "duration": "36 месяцев",
+        "price": "990р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 6,
+        "imgSrc": "./img/product-card/product-pofd.png",
+        "title": "Код активации Платформа ОФД",
+        "duration": "15 месяцев",
+        "price": "790р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 7,
+        "imgSrc": "./img/product-card/product-tensor.png",
+        "title": "Код активации Сбис ОФД",
+        "duration": "15 месяцев",
+        "price": "990р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 8,
+        "imgSrc": "./img/product-card/product-taxcom-2.png",
+        "title": "Код активации Первый ОФД",
+        "duration": "36 месяцев",
+        "price": "1 590р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 9,
+        "imgSrc": "./img/product-card/product-yandex.png",
+        "title": "Код активации Яндекс ОФД",
+        "duration": "15 месяцев",
+        "price": "490р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 10,
+        "imgSrc": "./img/product-card/product-taxcom.png",
+        "title": "Код активации Такском ОФД",
+        "duration": "15 месяцев",
+        "price": "790р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 11,
+        "imgSrc": "./img/product-card/product-ofd.png",
+        "title": "Код активации OFD.ru",
+        "duration": "15 месяцев",
+        "price": "790р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 12,
+        "imgSrc": "./img/product-card/product-firstofd.png",
+        "title": "Код активации Первый ОФД",
+        "duration": "15 месяцев",
+        "price": "790р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 13,
+        "imgSrc": "./img/product-card/product-yandex-2.png",
+        "title": "Код активации Яндекс ОФД",
+        "duration": "36 месяцев",
+        "price": "990р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 14,
+        "imgSrc": "./img/product-card/product-pofd.png",
+        "title": "Код активации Платформа ОФД",
+        "duration": "15 месяцев",
+        "price": "790р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 15,
+        "imgSrc": "./img/product-card/product-tensor.png",
+        "title": "Код активации Сбис ОФД",
+        "duration": "15 месяцев",
+        "price": "990р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    },
+    {
+        "id": 16,
+        "imgSrc": "./img/product-card/product-taxcom-2.png",
+        "title": "Код активации Первый ОФД",
+        "duration": "36 месяцев",
+        "price": "1 590р",
+        "vendorCode": "ХХХХХХХХ",
+        "benefits": [
+            {
+                "value": true,
+                "text": "Выгодная цена!",
+                "icon": "coins"
+            },
+            {
+                "value": true,
+                "text": "Быстрая доставка",
+                "icon": "fast-arrow-right"
+            }
+        ],
+        "ofdServer": "kkt.ofd.yandex.net или 185.32.186.252",
+        "dns": "0.0.0.0",
+        "port": "12345",
+        "timeOut": "10000 мс",
+        "connectTimerOfd": "30 мс",
+        "pollingTimerFn": "30 мс",
+        "tinOfd": "7704358518",
+        "nameOfd": "ООО «Яндекс.ОФД»",
+        "urlOfd": "ofd.yandex.ru",
+        "urlTax": "nalog.ru"
+    }
+]

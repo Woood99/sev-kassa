@@ -1,0 +1,74 @@
+.add-review {
+
+    &__container {
+    width: 500px;
+    @media (max-width:$mobile-max){
+        width: calc(100% - 20px);
+    }
+    }
+
+    &__close {
+    }
+
+    &__content {
+     padding: 40px 60px;
+        @media (max-width:$tablet-max){
+           padding: 40px 30px;
+        }
+        @media (max-width:$smallTablet-max){
+             padding: 40px 20px; 
+        }
+    }
+
+    &__title {
+        @include adaptiveValue("font-size",30 ,20 );
+        line-height: math.div(36 ,30 );
+        text-align: center;
+        @media (max-width:$smallTablet-max){
+             text-transform: uppercase; 
+        }
+    }
+
+    &__row {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            margin-right: 40px;
+            font-size: 20px;
+            line-height: math.div(30 , 20);
+            color: var(--dark-blue);
+        }
+    }
+
+    &__rating {
+    }
+    &__labels{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__label {
+        &:not(:first-child){
+            margin-top: 10px;
+        }
+    }
+
+    &__input {
+    }
+
+    &__input--name {
+    }
+
+    &__input--email {
+    }
+
+    &__input--textarea {
+    }
+
+    &__btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+}

@@ -21,3 +21,32 @@
 textarea.input-reset {
     resize: none;
 }
+
+
+.input-primary {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--white);
+    border: none;
+    font-weight: 500;
+    @include adaptiveValue("font-size", 20, 17);
+    line-height: 150%;
+    color: #000;
+
+    &::placeholder {
+        color: var(--gray-dark);
+    }
+
+    @media (max-width:$smallTablet-max) {
+        padding: 12px 15px;
+    }
+    &--border{
+        border: 1px solid var(--gray-dark);
+    }
+    &--border-mobile {
+        @media (max-width:$smallTablet-max) {
+            border: 1px solid var(--gray-dark);
+        }
+    }
+}

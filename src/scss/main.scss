@@ -2,10 +2,10 @@
 
 // global components
 @import "vars";
-@import "base";
 @import "mixins";
 @import "fonts";
 @import "settings";
+@import "base";
 @import "common";
 
 
@@ -17,6 +17,8 @@
 @import "./ui-kit/working-hours";
 @import "./ui-kit/benefit-item";
 @import "./ui-kit/product-card";
+@import "./ui-kit/modals";
+@import "./ui-kit/arrows";
 
 
 // =============================================================================================================
@@ -26,6 +28,7 @@
 @import "./components/nav";
 @import "./components/logo";
 @import "./components/product-modal";
+@import "./components/add-review";
 
 
 // =============================================================================================================
@@ -38,6 +41,8 @@
 @import "./components/descr";
 @import "./components/benefits";
 @import "./components/popular-products";
+@import "./components/ask-question";
+@import "./components/reviews";
 @import "./components/footer";
 
 

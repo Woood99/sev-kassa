@@ -16,10 +16,18 @@
             @include('partials/descr.html')
             @include('partials/benefits.html')
             @include('partials/popular-products.html')
+            @include('partials/ask-question.html', {
+            "id": "one"
+            })
+            @include('partials/reviews.html')
+            @include('partials/ask-question.html', {
+            "id": "two"
+            })
         </main>
         @include('partials/footer.html')
     </div>
     @include('partials/popup.html')
+
 </body>
 
 </html>
