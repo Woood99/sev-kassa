@@ -703,12 +703,12 @@ textarea.input-reset {
 }
 @media (max-width: 1024px) {
   .title-2 {
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 @media (max-width: 576px) {
   .title-2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -1931,6 +1931,19 @@ textarea.input-reset {
 .add-review__label:not(:first-child) {
   margin-top: 10px;
 }
+.add-review__input {
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.2222222222;
+}
+@media (max-width: 768px) {
+  .add-review__input {
+    font-size: 17px;
+  }
+}
+.add-review__input--textarea {
+  min-height: 150px;
+}
 .add-review__btn {
   margin-top: 10px;
   width: 100%;
@@ -2449,6 +2462,94 @@ textarea.input-reset {
     grid-template-columns: 100px 1fr;
     padding: 20px 15px;
     grid-gap: 20px 25px;
+  }
+}
+
+.descr-business__title {
+  margin: 0 auto;
+  max-width: 915px;
+}
+@media (min-width: 1025px) {
+  .descr-business__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.descr-business__img {
+  border-radius: 30px;
+}
+@media (min-width: 1025px) {
+  .descr-business__img {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 44.6428571429%;
+    flex: 1 0 44.6428571429%;
+  }
+}
+.descr-business__img img {
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1024px) {
+  .descr-business__img {
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 20em) and (max-width: 64em) {
+  .descr-business__img {
+    max-height: calc(7.5rem + 10 * (((100vw - 20rem)) / ((44))));
+  }
+}
+@media (max-width: 1024px) and (max-width: 20em) {
+  .descr-business__img {
+    max-height: 7.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .descr-business__img img {
+    max-height: inherit;
+  }
+}
+@media (max-width: 576px) {
+  .descr-business__img {
+    border-radius: 5px;
+  }
+}
+@media (min-width: 89.375em) {
+  .descr-business__text {
+    margin-left: 4.8125rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 89.375em) {
+  .descr-business__text {
+    margin-left: calc(1.875rem + 2.9375 * (((100vw - 20rem)) / ((69.375))));
+  }
+}
+@media (max-width: 20em) {
+  .descr-business__text {
+    margin-left: 1.875rem;
+  }
+}
+.descr-business__text p {
+  font-weight: 500;
+}
+.descr-business__text p:not(:first-child) {
+  margin-top: 30px;
+}
+@media (max-width: 1024px) {
+  .descr-business__text {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .descr-business__text p {
+    font-weight: 400;
+  }
+}
+@media (max-width: 768px) {
+  .descr-business__text {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

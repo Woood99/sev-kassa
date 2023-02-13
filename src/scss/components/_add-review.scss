@@ -56,6 +56,13 @@
     }
 
     &__input {
+
+        border-radius: 10px;
+        font-size: 18px;
+      line-height: math.div(22 , 18);
+      @media (max-width:$smallTablet-max){
+         font-size: 17px; 
+      }
     }
 
     &__input--name {
@@ -65,6 +72,7 @@
     }
 
     &__input--textarea {
+        min-height: 150px;
     }
 
     &__btn {

@@ -294,7 +294,7 @@ function addReview() {
                         <input type="email" name="E-mail" class="input-reset input-primary input-primary--border add-review__input add-review__input--email" placeholder="E-mail">
                     </label>
                     <label class="add-review__label label-validate label-validate--aqua">
-                    <textarea class="input-reset input-primary input-primary--border add-review__input add-review__input--textarea" placeholder="Текст отзыва"></textarea>
+                        <textarea class="input-reset input-primary input-primary--border add-review__input add-review__input--textarea" placeholder="Текст отзыва"></textarea>
                     </label>
                 </div>
                 <button type="submit" class="btn btn-reset btn-primary add-review__btn">Добавить отзыв</button>
