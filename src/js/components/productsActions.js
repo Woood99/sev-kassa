@@ -73,7 +73,7 @@ const productsActions = () => {
             <li class="popular-products__item product-card" data-product-id="${product.id}">
                     <picture>
                         <source srcset="${product.imgSrc.slice(0, product.imgSrc.lastIndexOf('.'))}.webp" type="image/webp">
-                        <img loading="lazy" src="${product.imgSrc}" alt="${product.title}">
+                        <img loading="lazy" src="${product.imgSrc}" class="product-card__img" width="200" height="154" alt="${product.title}">
                      </picture>
                     <div class="product-card__content">
                         <h3 class="product-card__title">
@@ -179,7 +179,7 @@ const productsActions = () => {
                         <div class="product-modal__img">
                              <picture>
                                 <source srcset="${itemData.imgSrc.slice(0, itemData.imgSrc.lastIndexOf('.'))}.webp" type="image/webp">
-                                <img loading="lazy" src="${itemData.imgSrc}" alt="${itemData.title}">
+                                <img loading="lazy" src="${itemData.imgSrc}" width="200" height="154" alt="${itemData.title}">
                             </picture>
                         </div>
                         <div class="product-modal__labels">
@@ -290,7 +290,7 @@ const productsActions = () => {
                         <div class="product-modal__img">
                         <picture>
                             <source srcset="${itemData.imgSrc.slice(0, itemData.imgSrc.lastIndexOf('.'))}.webp" type="image/webp">
-                            <img loading="lazy" src="${itemData.imgSrc}" alt="${itemData.title}">
+                            <img loading="lazy" src="${itemData.imgSrc}" width="200" height="154" alt="${itemData.title}">
                         </picture>
                         </div>
                         <h2 class="product-modal__title">${itemData.title}</h2>
