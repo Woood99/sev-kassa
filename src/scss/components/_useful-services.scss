@@ -5,13 +5,15 @@
     &__list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
-        grid-gap: 30px 40px;
-     @media (max-width:$tablet-max){
-        grid-gap: 30px;
-     }
-        @media (max-width:$smallTablet-max){
-             grid-gap: 40px 20px; 
-             grid-template-columns: repeat(2,1fr); 
+        gap: 30px 40px;
+
+        @media (max-width:$tablet-max) {
+            gap: 30px;
+        }
+
+        @media (max-width:$smallTablet-max) {
+            gap: 40px 20px;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 

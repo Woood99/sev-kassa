@@ -27,7 +27,7 @@ $mainColor: #000; // Цвет шрифта по умолчанию
     --gradient-bg: linear-gradient(106.56deg, #1E293B 1.26%, #266275 101.3%);
 
     --shadow-primary: 3px 4px 12px rgba(0, 0, 0, 0.25);
-    --shadow-secondary: 2.01389px 2.68519px 8.05556px rgba(0, 0, 0, 0.25);
+    --shadow-secondary: 2px 2.6px 8px rgba(0, 0, 0, 0.25);
 }
 
 // gap
@@ -35,7 +35,7 @@ $topGapPrimaryMax: 120;
 $topGapPrimaryMin: 60;
 
 
-$topGapSecondaryMax: 70;
+$topGapSecondaryMax: 60;
 $topGapSecondaryMin: 40;
 
 

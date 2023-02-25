@@ -117,7 +117,10 @@ function addReview() {
             const reviewHTML = `
             <div class="swiper-slide reviews__item review-item">
                 <div class="review-item__img">
-                    <img src="./img/review-1.jpg" alt="${formData.name}">
+                    <picture>
+                        <source srcset="./img/review-1.webp" type="image/webp">
+                        <img loading="lazy" src="./img/review-1.jpg" width="120" height="120" alt="${formData.name}">
+                    </picture>
                 </div>
                 <p class="review-item__text">
                     ${formData.text}

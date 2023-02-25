@@ -98,13 +98,14 @@
     }
 }
 
-.btn-fourth{
+.btn-fourth {
     font-weight: 500;
-  font-size: 15px;
-line-height: math.div(18 , 15);
-padding: 6px 26px;
-border: 1px solid var(--dark-blue);
-border-radius: 20px;
+    font-size: 15px;
+    line-height: math.div(18, 15);
+    padding: 6px 26px;
+    border: 1px solid var(--dark-blue);
+    border-radius: 20px;
+
     &:hover {
         color: var(--orange);
         border-color: currentColor;

@@ -30,15 +30,11 @@
 .text {
     font-weight: 400;
     font-size: 20px;
+    @include adaptiveValue("font-size", 20, 16);
     line-height: 150%;
 
     @media (max-width:$tablet-max) {
         line-height: 140%;
-        font-size: 18px;
-    }
-
-    @media (max-width:$mobile-max) {
-        font-size: 16px;
     }
 }
 
@@ -79,10 +75,26 @@
 .top-gap-primary {
     @include adaptiveValue("margin-top", $topGapPrimaryMax, $topGapPrimaryMin);
 }
+
 .top-gap-secondary {
     @include adaptiveValue("margin-top", $topGapSecondaryMax, $topGapSecondaryMin);
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
+
+.ibg {
+    position: relative;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+// padding-bottom: percent(height, width);

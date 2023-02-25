@@ -71,7 +71,10 @@ const productsActions = () => {
         productsArray.forEach(product => {
             const productHTML = `
             <li class="popular-products__item product-card" data-product-id="${product.id}">
-                    <img class="product-card__img" src="${product.imgSrc}" alt="${product.title}">
+                    <picture>
+                        <source srcset="${product.imgSrc.slice(0, product.imgSrc.lastIndexOf('.'))}.webp" type="image/webp">
+                        <img loading="lazy" src="${product.imgSrc}" alt="${product.title}">
+                     </picture>
                     <div class="product-card__content">
                         <h3 class="product-card__title">
                             ${product.title}
@@ -174,7 +177,10 @@ const productsActions = () => {
                 <form class="product-modal__content modal-primary__content" action="#">
                     <div class="product-modal__left">
                         <div class="product-modal__img">
-                             <img src="${itemData.imgSrc}" alt="${itemData.title}">
+                             <picture>
+                                <source srcset="${itemData.imgSrc.slice(0, itemData.imgSrc.lastIndexOf('.'))}.webp" type="image/webp">
+                                <img loading="lazy" src="${itemData.imgSrc}" alt="${itemData.title}">
+                            </picture>
                         </div>
                         <div class="product-modal__labels">
                             <label class="product-modal__label label-validate label-validate--aqua">
@@ -282,7 +288,10 @@ const productsActions = () => {
                 </button>
                 <form class="product-modal__content modal-primary__content" action="#">
                         <div class="product-modal__img">
-                             <img src="${itemData.imgSrc}" alt="${itemData.title}">
+                        <picture>
+                            <source srcset="${itemData.imgSrc.slice(0, itemData.imgSrc.lastIndexOf('.'))}.webp" type="image/webp">
+                            <img loading="lazy" src="${itemData.imgSrc}" alt="${itemData.title}">
+                        </picture>
                         </div>
                         <h2 class="product-modal__title">${itemData.title}</h2>
                         <div class="product-modal__row product-modal__row--one">
