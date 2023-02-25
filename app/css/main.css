@@ -294,6 +294,19 @@ a {
   color: var(--orange);
 }
 
+.btn-fourth {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  padding: 6px 26px;
+  border: 1px solid var(--dark-blue);
+  border-radius: 20px;
+}
+.btn-fourth:hover {
+  color: var(--orange);
+  border-color: currentColor;
+}
+
 .input-reset {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1215,6 +1228,65 @@ textarea.input-reset {
 .arrows-primary__arrow:not(:first-child) {
   margin-left: 40px;
 }
+.useful-service {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.useful-service__icon {
+  fill: #25b19e;
+  display: block;
+  max-width: 160px;
+}
+@media (max-width: 1024px) {
+  .useful-service__icon {
+    max-width: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .useful-service__icon {
+    max-width: 125px;
+  }
+}
+@media (max-width: 576px) {
+  .useful-service__icon {
+    max-width: 100%;
+  }
+}
+.useful-service__title {
+  margin-top: 15px;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  color: var(--dark-blue);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+@media (max-width: 1024px) {
+  .useful-service__title {
+    font-size: 16px;
+  }
+}
+.useful-service__btn {
+  margin-top: 15px;
+}
+@media (max-width: 480px) {
+  .useful-service__btn {
+    padding-left: 10px;
+    padding-right: 15px;
+    width: 100%;
+  }
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2550,6 +2622,25 @@ textarea.input-reset {
 @media (max-width: 768px) {
   .descr-business__text {
     margin-top: 20px;
+  }
+}
+
+.useful-services__list {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  grid-gap: 30px 40px;
+}
+@media (max-width: 1024px) {
+  .useful-services__list {
+    grid-gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .useful-services__list {
+    grid-gap: 40px 20px;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /*# sourceMappingURL=main.css.map */
