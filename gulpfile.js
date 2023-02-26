@@ -25,7 +25,6 @@ const image = require('gulp-imagemin');
 const {
     readFileSync
 } = require('fs');
-const typograf = require('gulp-typograf');
 const webp = require('gulp-webp');
 const mainSass = gulpSass(sass);
 const webpackStream = require('webpack-stream');
@@ -244,9 +243,6 @@ const htmlInclude = () => {
         .pipe(fileInclude({
             prefix: '@',
             basepath: '@file'
-        }))
-        .pipe(typograf({
-            locale: ['ru', 'en-US']
         }))
         .pipe(dest(buildFolder))
         .pipe(browserSync.stream());
