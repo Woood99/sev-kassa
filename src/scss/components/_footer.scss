@@ -1,0 +1,275 @@
+.footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 30px 0 40px;
+
+    &__container {
+        display: grid;
+        grid-template-columns: max-content repeat(3, minmax(150px, 300px)) 1fr;
+        grid-gap: 60px 0px;
+
+        @media (max-width:$tablet-max) {
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 40px 0;
+        }
+        @media (max-width:$smallTablet-max){
+             grid-template-columns:1fr;
+             justify-items: center;
+             justify-content: center;
+             grid-gap: 20px 0;
+        }
+    }
+
+    &__nav {
+        padding-right: 45px;
+        border-right: 1px solid var(--gray-dark);
+        @media (max-width:$tablet-max) {
+            order: 2;
+            grid-column: 2 span;
+        }
+        @media (max-width:$smallTablet-max){
+             order: 1; 
+             border-right: none;
+             text-align: center;
+             padding: 0 0 15px 0;
+             border-bottom: 1px solid var(--gray-dark);
+        }
+    }
+
+    &__contact {
+        @media (max-width:$tablet-max) {
+            order: 1;
+            grid-column: 2 span;
+        }
+        @media (max-width:$smallTablet-max){
+             order: 2; 
+             border-bottom: 1px solid var(--gray-dark);
+             grid-column: 1/2;
+             max-width: 220px;
+        }
+    }
+
+    &__info {
+        @media (min-width:$tablet-min) {
+            grid-column: 1/6;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media (max-width:$tablet-max) {
+            grid-column: 3 span;
+            order: 3;
+            margin-left: 25px;
+            text-align: center;
+            justify-self: start;
+            align-self: end;
+
+            display: flex;
+            flex-direction: column;
+        }
+        @media (max-width:$smallTablet-max){
+             justify-self: auto;
+             margin: 20px 0 0 0;
+        }
+    }
+
+    &__up {
+        align-self: center;
+        justify-self: end;
+        margin-left: 40px;
+        @media (max-width:$tablet-max) {
+            order: 4;
+            order: 4;
+            align-self: center;
+        }
+        @media (max-width:$smallTablet-max){
+            justify-self: auto; 
+            margin-left: 0;
+        }
+        &:hover{
+            svg{
+                fill: var(--orange);
+            }
+            span{
+                color: var(--orange);
+            }
+        }
+    }
+
+    &__logo {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: math.div(35 , 30);
+        letter-spacing: 0.065em;
+        @media (min-width:$tablet-min) {
+            display: none;
+        }
+
+        @media (max-width:$tablet-max) {
+            margin-bottom: 58px;
+            order: 1;
+        }
+
+        @media (max-width:$smallTablet-max) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__descr {
+        @media (max-width:$tablet-max) {
+            order: 2;
+        }
+    }
+
+    &__policy {
+        transition: color $transitionSpeed $transitionFunction;
+        &:hover{
+            color: var(--orange);
+        }
+        @media (max-width:$tablet-max) {
+            order: 4;
+            margin-top: 25px;
+        }
+
+        @media (max-width:$smallTablet-max) {
+            margin-top: 40px;
+        }
+    }
+
+    &__ogrn {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+
+        @media (max-width:$tablet-max) {
+            order: 3;
+            margin-top: 25px;
+        }
+
+        @media (max-width:$smallTablet-max) {
+            margin-top: 20px;
+        }
+    }
+    @media (max-width:$tablet-max){
+        padding: 40px 0;
+    }
+    @media (max-width:$smallTablet-max){
+        padding: 30px 0;
+    }
+}
+
+.footer-nav {
+
+
+    &__list {}
+
+    &__item {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        transition: color $transitionSpeed $transitionFunction;
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+        &:hover{
+           color: var(--orange);
+        }
+    }
+
+    @media (max-width:$tablet-max) {
+        order: 2;
+    }
+}
+
+.footer-contact {
+    &--email {}
+
+    &--tel {
+        @media (min-width:$smallTablet-min){
+            border-left: 1px solid var(--gray-dark); 
+        }
+    }
+
+    &--address {
+        @media (min-width:$smallTablet-min){
+            border-left: 1px solid var(--gray-dark);
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        padding: 0 20px;
+        text-align: center;
+
+        @media (max-width:$tablet-max){
+            padding: 0 10px;
+        } 
+        @media (max-width:$smallTablet-max){
+             padding: 0 0 15px 0; 
+        }
+        &:hover{
+            .footer-contact{
+                &__icon{
+               
+                }
+                &__address{
+                    color: var(--orange);
+                }
+            }
+        }
+    }
+
+    &__icon {
+        flex: 0 0 80px;
+        width: 80px;
+        fill: currentColor;
+    }
+
+    &__title {
+        margin-top: 35px;
+        font-size: 18px;
+
+        @media (max-width:$tablet-max) {
+            font-size: 15px;
+        }
+    }
+
+    &__address {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+        transition: color $transitionSpeed $transitionFunction;
+    }
+}
+
+.arrow-up {
+    &__btn {
+        color: inherit;
+
+        svg {
+            width: 33px;
+            fill: currentColor;
+            display: block;
+            transition: fill $transitionSpeed $transitionFunction;
+            @media (max-width:$smallTablet-max){
+                 display: none; 
+            }
+        }
+        span{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: math.div(22 , 18);
+            text-decoration: underline;
+            transition: color $transitionSpeed $transitionFunction;
+            @media (min-width:$smallTablet-min){
+                display: none; 
+            }
+        }
+    }
+}
