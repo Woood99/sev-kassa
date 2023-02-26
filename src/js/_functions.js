@@ -188,6 +188,3 @@ import './functions/fix-fullheight';
 
 
 // ========================================================================================
-
-import isWebp from './functions/isWebp';
-isWebp();
